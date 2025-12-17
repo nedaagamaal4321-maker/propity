@@ -4,128 +4,145 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow-x: hidden;
-}
 
-.contain {
-    position: relative;
-    width: 100%;
-    height: 100vh;
 
-}
+/* start nav home section */
 
-.slider img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    display: block;
-}
+ nav { background-color: rgb(3, 82, 78);
+    font-size: 15px;}
 
-.navbarr {
+ .navbar-home {
+    
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     color: white;
     text-align: center;
-
 }
 
-.navbar-brand {
-    font-size: 20px;
-    color: white;
+/* end nav home section */
+
+.slider-header{
+    position: relative;
 }
 
-.navbarr .fixed-top {
-    padding: 15px 20px;
-}
 
-.navbar-nav li a {
-    color: white;
-    margin-left: 50px;
-}
-
-.navbarr nav {
-    margin: 20px 50px;
-    font-size: 15px;
-    background-color: rgb(3, 82, 78);
-
-}
-
-.navbarr nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-div h1 {
-    font-size: 10px;
-}
+/* start text box slider header home section */
 
 .text-box {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
-    transform: translate(-50%, 200%);
+    transform: translateX(-50%);
     text-align: center;
     width: 90%;
-    max-width: 600px;
-
 }
 
 .text-box h1 {
-    font-size: 30px;
+    font-size: 40px;
+    color: white;
+}
+
+.text-box input,
+.text-box button {
+    margin-top: 20px;
 }
 
 .text-box input {
     width: 80%;
     max-width: 400px;
     height: 40px;
-    border: none;
     border-radius: 80px;
+    border: none;
     padding-left: 20px;
-    margin-top: 20px;
 }
 
 .text-box button {
     width: 120px;
     height: 40px;
-    margin: 20px 0 0 0;
-    border: none;
     border-radius: 80px;
+    border: none;
     background-color: rgb(3, 82, 78);
     color: white;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.text-card {
-    margin: 0px 100px;
+@media (max-width:878px){
+    .text-box h1{
+        font-size:1.5rem ;
+    }
+    .text-box{
+        width: 95%;
+    }
+    .text-box input{
+        width: 250px;
+        font-size: 14px;
+    }
+    .text-box button{
+         width: 150px;
+        font-size: 14px;
+    }
 }
 
-.text-card button {
+@media(max-width:590px){
+    .text-box h1{
+        font-size:1.1rem ;
+    }
+
+    .text-box input{
+        width: 190px;
+        font-size: 10px;
+    }
+    .text-box button{
+         width: 90px;
+        font-size: 10px;
+    }
+
+}
+
+
+/* end text box slider header home section */
+
+
+.cards img {
+    width: 100%;
+    height: auto;
+}
+
+.textes .col-12 {
+    text-align: center;
+    background-color: white;
+    padding: 30px 10px;
+    margin: 10px 0;
+}
+
+.textes i {
+    font-size: 2rem;
+}
+
+.Agents img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+/* start slider cards home section  */
+
+
+.text-box-slider-cards button {
     width: 180px;
     height: 50px;
 
@@ -135,37 +152,29 @@ div h1 {
     color: white;
 }
 
-.cards {
-
-    width: 100%;
-    object-fit: cover;
-
-}
-
-.cards img {
-    width: 350px;
+.slider-cards img {
     height: 250px;
 }
 
 
-.cards hr {
+.slider-cards hr {
     width: 100px;
     font-size: 10px;
-    height: 3px;
+    height: 2px;
     background-color: rgb(24, 128, 121);
     opacity: 1;
 }
 
-.cards h5 {
+.slider-cards h5 {
     font-weight: bold;
     color: rgb(12, 109, 104);
 }
 
-.cards h6 {
+.slider-cards h6 {
     font-weight: 700;
 }
 
-.cards button {
+.slider-cards .btn-primary {
     width: 120px;
     height: 40px;
     background-color: rgb(3, 82, 78);
@@ -174,10 +183,18 @@ div h1 {
     border-radius: 80px;
 }
 
-#carouselExampleIndicators img {
-    width: 100%;
-    object-fit: cover;
-}
+/* end slider cards home section  */
+
+
+
+
+
+
+
+
+
+
+
 .lorem h1{
     font-size:20px;
     color: rgb(57, 79, 138) ;
@@ -185,44 +202,55 @@ div h1 {
 
 
 
+/* start about home section */
 
-
-
-
-
-
-
-
-
-
-.section2 {
+.about-home-section {
     background-color: rgba(245, 250, 249, 0.795);
- 
 
 }
 
-.textes {
-    padding: 30px 130px;
+.textes-about {
+    padding: 30px 50px;
 }
 
-.textes .col-12 {
+.textes-about div {
     text-align: center;
-    width: 250px;
     background-color: white;
     padding: 50px 0;
 
 }
 
 
-.textes i {
+.textes-about i {
     font-size: 30px;
 }
 
-.textes a {
+.textes-about a {
     color: black;
     text-decoration: none;
     font-weight: 500;
 }
+.textes-about  :hover{
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.textes-about div a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 50px;
+  left: 60px;
+  background-color: #000; 
+  transition: width 0.3s ease;
+}
+
+.textes-about a:hover::after {
+  width: 50%;
+}
+
+/* end about home section */
 
 
 
@@ -243,6 +271,15 @@ div h1 {
 
 
 
+
+
+
+
+
+
+
+
+/* start customer sayes home section */
 
 .imgs img {
     width: 50px;
@@ -253,33 +290,14 @@ div h1 {
     margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-
-    /* md */
-    .imgs img {
-        width: 50px;
-        height: 50px;
-    }
-}
-
-@media (min-width: 1200px) {
-
-    /* xl */
-    .imgs img {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-
-
-
-
 
 .imgs i {
     color: gold;
     margin-top: 30px;
 }
+
+/* end customer sayes home section */
+
 
 
 
@@ -311,8 +329,7 @@ div h1 {
 
 
 .text img {
-    width: 600px;
-    height: 500px;
+    width: 100%;
     padding: 10px;
 }
 
@@ -332,7 +349,6 @@ div h1 {
 .section3 {
     background-color: rgba(245, 250, 249, 0.795);
 }
-
 
 
 
@@ -409,7 +425,7 @@ div h1 {
     text-align: center;
     justify-content: space-around;
     gap: 30px;
-    padding: 0 150px;
+    padding: 0 15px;
     position: relative;
 }
 
@@ -492,25 +508,7 @@ footer a:hover {
 
 
 
-.textes .col-12:hover{
-  opacity: 1;
-  transform: scale(1.1);
-}
 
-.textes a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px; /* سمك الخط */
-  bottom: 50px;
-  left: 60px;
-  background-color: #000; /* لون الخط */
-  transition: width 0.3s ease;
-}
-
-.textes a:hover::after {
-  width: 50%;
-}
 
 
 
@@ -618,7 +616,7 @@ footer a:hover {
 }
 
 .navbar-about nav {
-    margin: 20px 50px;
+   
     font-size: 15px;
     background-color: rgb(3, 82, 78);
 
@@ -715,4 +713,15 @@ footer a:hover {
     border: solid 1px rgb(2, 2, 36);
     background-color: white;
     color:rgb(2, 2, 36) ;
+}
+
+
+
+@media(max-width:590px){
+    .adress h1{
+        font-size:30px ;
+        
+    }
+
+
 }
